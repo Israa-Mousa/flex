@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .main {
+            width: 60%;
+            margin: auto !important;
+           display: grid;
+            background-color: rgb(248, 243, 243);
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 100px 1fr 100px;
+            gap: 10px;
+            padding: 10px;
+        }
+        .header {
+            padding:10px;
+            font-size: x-large;
+            background-color: rgb(247, 139, 38);
+            align-content: center;
+                }
+        .nav {
+            padding: 10px;
+            background-color: rgb(216, 173, 112);
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 100px 1fr ;  
+            gap:74px;
+        }
+
+        .nav-list{
+      
+            padding: 10px;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows:  1fr ;  
+          
+        }
+        .nav-item {
+            width: 120px;
+            height: 40px;
+            background-color: white;
+        }
+        .main-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr ;
+            /* grid-template-rows:  370px 370px ;   */
+            gap: 20px;
+
+           
+        }
+        .article {
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows:  1fr 1fr 1fr ;  
+            background-color: aqua;
+  
+            padding: 10px;
+
+            gap: 10px;
+        }
+        .section {
+            background-color: rgb(184, 201, 252);
+          padding: 10px;
+            height: 60px;
+        }
+        .aside {
+            background-color: rgb(226, 206, 244);
+            /* grid-template-columns: 1fr ;
+            grid-template-rows:  1fr 1fr ;  
+     
+            gap: 20px; */
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows:  100px 100px;  
+  
+            padding: 10px;
+
+            gap: 10px;
+
+        }
+        .aside-item {
+            /* height: 40px;
+            width: 90%; */
+            background-color: aliceblue;
+          padding: 10px;
+            height: 60px;
+        }
+        .footer {
+            /* display: grid;
+            grid-template-columns: 100px ;
+            grid-template-rows:  100px;   */
+
+            background-color: pink;
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div class="header">
+                Header
+            </div>
+            <div class="nav">
+                
+                <div>
+                  <h2>Nav</h2>
+                  </div>
+                <div  class="nav-list">
+                <div class="nav-item"></div>
+
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+          
+            </div>
+            </div>
+            <div class="main-container">
+                <div class="article">
+                    <h2>article</h2>
+                    <div class="section">section 1</div>
+                    <div class="section">section 2</div>
+                    <div class="section">section 3</div>
+                </div>
+                <div class="aside">
+                    <h2>aside</h2>
+                    <div class="aside-item"></div>
+                    <div class="aside-item"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <h2>footer</h2>
+            </div>
+        </div>
+    </body>
+</html>
